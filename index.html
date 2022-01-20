@@ -19,7 +19,7 @@ body, html {
   background-position: center;
   background-size: cover;
   background-image: url("/assets/img/IMG_5085.jpg");
-  min-height: 60%;
+  min-height: 50%;
 }
 
 .w3-bar .w3-button {
@@ -34,7 +34,8 @@ body, html {
     <a href="#home" class="w3-bar-item w3-button w3-wide">RAN MEI</a>
     <!-- Right-sided navbar links -->
     <div class="w3-right w3-hide-small">
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-home w3-xlarge"></i> ABOUT</a>
+      <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home w3-xlarge"></i> HOME</a>
+      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user w3-xlarge"></i> ABOUT</a>
       <a href="#research" class="w3-bar-item w3-button"><i class="fa fa-university w3-xlarge"></i> RESEARCH</a>
       <a href="#publication" class="w3-bar-item w3-button"><i class="fa fa-book w3-xlarge"></i> PUBLICATION</a>
     </div>
@@ -49,6 +50,7 @@ body, html {
 <!-- Sidebar on small screens when clicking the menu icon -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
+  <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
   <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button">RESEARCH</a>
   <a href="#publication" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATION</a>
@@ -61,21 +63,20 @@ body, html {
     <span class="w3-xxlarge w3-hide-large w3-hide-medium"><strong>Ran Mei (梅然)'s Website</strong></span><br>
 </header>
 
-<!-- About Section -->
-<div class="w3-container" style="padding:128px 16px" id="about">
+<!-- Home Section -->
+ <div class="w3-container" style="padding:128px 16px" id="home"> 
   
   <div class="w3-row-padding">
     
     <div class="w3-col m6">
-      <h3 class="w3-padding">About Me **flag=1**</h3>
-      <hr style="width:400px;background-color:dark-grey;height:1px" class="w3-black">
       <p class="w3-padding w3-large">I am now a postdoc working at the National Institute of Advanced Industrial Science and Technology, Japan (<a href="https://www.aist.go.jp/index_en.html">AIST</a>, <a href="https://www.aist.go.jp/">産業技術総合研究所</a>) in the <a href="https://unit.aist.go.jp/bpri/bpri-gene/member_e.html">Microbial and Genetic Resources Research Group</a>. My current research topic is revealing the evolutionary hostory of microorganisms occurring in natural and engieered ecosystems with <a href="https://scholar.google.co.jp/citations?user=PSXFfsoAAAAJ&hl=en">Dr. Masaru K. Nobu</a>. I got my Master’s and PhD degree both in Environmental Science and Engingeering from the University of Illinos at Urbana-Champaign, where majority of my research focused on microbial ecology in wastewater treatment processes. I received my Bachelor’s of Engineering degree from Peking University, China. </p>
-      <p><i class="fa fa-clip fa-fw w3-xlarge w3-padding"> </i> <a href="https://scholar.google.co.jp/citations?user=mRbZ3CoAAAAJ&hl=en">Google Scholar</a>
-      <p><i class="fa fa-envelope fa-fw w3-xlarge w3-padding"> </i> Email: r.mei@aist.go.jp; mrzhsy@gmail.com</p>
+      <h3 class="w3-padding" > **flag=2** </h3>
+      <p><i class="fa fa-paperclip fa-fw w3-large w3-padding"> </i> <a href="https://scholar.google.co.jp/citations?user=mRbZ3CoAAAAJ&hl=en"> Google Scholar</a>
+      <p><i class="fa fa-envelope fa-fw w3-large w3-padding"> </i> Email: r.mei@aist.go.jp; mrzhsy@gmail.com</p>
     </div>
     
     <div class="w3-col m6">
-      <img class="w3-image w3-round-large" src="/assets/img/profile.jpg" alt="profile" width="300" height="494">
+      <img class="w3-image w3-round-large w3-padding" src="/assets/img/profile.jpg" alt="profile" width="240" height="320">
     </div>
     
   </div>
@@ -83,8 +84,52 @@ body, html {
 
 
 
-<!-- Team Section -->
-<div class="w3-container" style="padding:128px 16px" id="team">
+  <!-- About Section -->
+<div class="w3-container" style="padding:128px 16px" id="about">
+  <h3 class="w3-center">ABOUT THE COMPANY</h3>
+  <p class="w3-center w3-large">Key features of our company</p>
+  <div class="w3-row-padding w3-center" style="margin-top:64px">
+    <div class="w3-quarter">
+      <i class="fa fa-desktop w3-margin-bottom w3-jumbo w3-center"></i>
+      <p class="w3-large">Responsive</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-heart w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Passion</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-diamond w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Design</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+    <div class="w3-quarter">
+      <i class="fa fa-cog w3-margin-bottom w3-jumbo"></i>
+      <p class="w3-large">Support</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Promo Section - "We know design" -->
+<div class="w3-container w3-light-grey" style="padding:128px 16px">
+  <div class="w3-row-padding">
+    <div class="w3-col m6">
+      <h3>We know design.</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod<br>tempor incididunt ut labore et dolore.</p>
+      <p><a href="#work" class="w3-button w3-black"><i class="fa fa-th"> </i> View Our Works</a></p>
+    </div>
+    <div class="w3-col m6">
+      <img class="w3-image w3-round-large" src="/w3images/phone_buildings.jpg" alt="Buildings" width="700" height="394">
+    </div>
+  </div>
+</div>
+  
+  
+  
+<!-- Research Section -->
+<div class="w3-container" style="padding:128px 16px" id="research">
   <h3 class="w3-center">THE TEAM</h3>
   <p class="w3-center w3-large">The ones who runs this company</p>
   <div class="w3-row-padding w3-grayscale" style="margin-top:64px">
