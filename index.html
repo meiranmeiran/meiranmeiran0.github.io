@@ -39,15 +39,7 @@ body, html {
   transform: translate(-50%, -50%);
 }
 	
-/* Full height image header */
-.bgimg-1 {
-  background-position: center;
-  background-attachment: fixed; 
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-image: url('https://yalinli2.github.io/webpage/images/backgrounds/index.jpg');
-  min-height: 80%;
-}
+
 
 .w3-bar .w3-button {
   padding: 8px;
@@ -84,12 +76,21 @@ body, html {
   <a href="#publication" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATION</a>
 </nav>
 
-<!-- Header with full-height image -->
-<header class="bgimg-1 w3-display-container w3-grayscale-min" id="home">
-	<div class="w3-display-middle w3-text-white", style="padding:32px">
-		<span class="w3-jumbo w3-hide-small"><b>Ran Mei's Website</b></span><br>
-		<span class="w3-xxlarge w3-hide-large w3-hide-medium"><b>Ran Mei's Website</b></span><br>
-	</div> 
+<head>
+<style>
+header {
+  background-image: url('https://yalinli2.github.io/webpage/images/bg_index.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+</style>
+</head>
+
+<header>
+<h1>
+Yalin Li
+</h1>
 </header>
 
 <!-- Home Section -->
