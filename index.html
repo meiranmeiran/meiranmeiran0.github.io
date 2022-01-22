@@ -1,32 +1,54 @@
 <!DOCTYPE html>
 <html>
-<title>RAN MEI's WEBSITE</title>
+<title>Ran Mei Website</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Source+Serif+Pro:wght@200;300;400&display=swap" rel="stylesheet">
 
+ 
 <style>
-body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif; line-height: 1.5;}
+html {
+  scroll-behavior: smooth;
+ }
+
+body,h2,h4,h5,h6 {font-family: "Source Serif Pro", sans-serif; font-weight: 200; line-height: 1.3;}
+h1 {font-family: "Libre Baskerville", sans-serif; line-height: 1.3; font-size:26px}
+h3 {font-family: "Libre Baskerville", sans-serif; line-height: 1.3; font-size:18px}
 body {font-size: 16px;}
 img {margin-bottom: -8px;}
-	
+
+a.bolder {
+   font-family: "Source Serif Pro", sans-serif; font-weight: 300;
+}
+
 p.small {
-  line-height: 1.5;
+  line-height: 1.3;
 }
 
 li.small{
-  line-height: 1.5;
+  line-height: 1.3;
+}
+
+ul.hyphen{
+   list-style-type: '- ';
+   padding-left: 10px;
 }
 			
 body, html {
   height: 100%;
-  line-height: 1.8;
+  line-height: 1.3;
 }
 
 .container { 
-  height: 500px;
+  height: 400px;
+  position: relative;
+}
+
+.container-about { 
+  height: 550px;
   position: relative;
 }
 
@@ -39,31 +61,60 @@ body, html {
   transform: translate(-50%, -50%);
 }
 	
-.header-1 {
-  background-image: url('/assets/img/coral.jpg');
-  background-repeat: no-repeat;
-  background-size: 80%;
-  min-height: 60%;
+/* Full height image header */
+.bgimg-1 {
+  background-position: center top;
+  background-image: url("/Users/n20a/Downloads/topimg.mr.jpg");
+  background-attachment: fixed; 
+  min-height: 480px;
+  background-size: 1000px;
 }
 
 .w3-bar .w3-button {
   padding: 8px;
 }
+
+.w3-win8-olive
+{color:#fff;background-color:#6d8764}
+.w3-win8-steel
+{color:#fff;background-color:#647687}
+.w3-win8-mauve
+{color:#fff;background-color:#76608a}
+.w3-2021-inkwell
+{color:#fff;background-color:#363945}
+.w3-2020-navy-blazer
+{color:#fff;background-color:#282D3C}
+.w3-2019-evening-blue
+{color:#fff;background-color:#2A293E}
+
+
 </style>
 	
-<body class="w3-content w3-justify w3-dark-grey" style="max-width:1500px;">
+<body class="w3-content w3-justify w3-black" style="max-width:1000px;">
 
 <!-- Navbar (sit on top) -->
 <div class="w3-top">
-  <div class="w3-bar w3-white w3-card" style="max-width:1500px; height:40px;" id="myNavbar">
-    <a href="#home" class="w3-bar-item w3-button w3-wide">RAN MEI (梅然1)</a>
-    <!-- Right-sided navbar links -->
-    <div class="w3-right w3-hide-small">
-      <a href="#home" class="w3-bar-item w3-button"><i class="fa fa-home w3-large"></i> HOME</a>
-      <a href="#about" class="w3-bar-item w3-button"><i class="fa fa-user w3-large"></i> ABOUT</a>
-      <a href="#research" class="w3-bar-item w3-button"><i class="fa fa-university w3-large"></i> RESEARCH</a>
-      <a href="#publication" class="w3-bar-item w3-button"><i class="fa fa-book w3-large"></i> PUBLICATION</a>
+  <div class="w3-bar w3-2019-evening-blue w3-card" style="max-width:1000px; height:35px;" id="myNavbar">
+    <a href="#home" class="w3-bar-item w3-button w3-hide-small w3-hide-medium w3-text-white bolder"><i class="fa fa-home w3-large"></i> Ran Mei | 梅 然</a>
+    <a href="#home" class="w3-bar-item w3-button w3-medium w3-hide-large"><i class="fa fa-home w3-large"></i> Ran Mei | 梅 然</a>
+    <!-- Right-sided navbar links (Large) -->
+    <div class="w3-right w3-hide-small w3-hide-medium">
+      <a href="#about" class="w3-bar-item w3-button bolder"><i class="fa fa-user w3-large"></i> About</a>
+      <a href="#news" class="w3-bar-item w3-button bolder"><i class="fa fa-newspaper-o w3-large"></i> News</a>
+      <a href="#research" class="w3-bar-item w3-button bolder"><i class="fa fa-university w3-large"></i> Topics</a>
+      <a href="#people" class="w3-bar-item w3-button bolder"><i class="fa fa-users w3-large"></i> People</a>
+      <a href="#publication" class="w3-bar-item w3-button bolder"><i class="fa fa-book w3-large"></i> Papers</a>
     </div>
+
+    <!-- Right-sided navbar links (Medium) -->
+    <div class="w3-right w3-hide-small w3-hide-large">
+      <a href="#about" class="w3-bar-item w3-button w3-medium bolder"><i class="fa fa-user w3-large"></i> About</a>
+      <a href="#news" class="w3-bar-item w3-button w3-medium bolder"><i class="fa fa-newspaper-o w3-large"></i> News</a>
+      <a href="#research" class="w3-bar-item w3-button w3-medium bolder"><i class="fa fa-university w3-large"></i> Topics</a>
+      <a href="#people" class="w3-bar-item w3-button w3-medium bolder"><i class="fa fa-users w3-large"></i> People</a>
+      <a href="#publication" class="w3-bar-item w3-button w3-medium bolder"><i class="fa fa-book w3-large"></i> Papers</a>
+    </div>
+
     <!-- Hide right-floated links on small screens and replace them with a menu icon -->
 
     <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-large w3-hide-medium" onclick="w3_open()">
@@ -73,144 +124,317 @@ body, html {
 </div>
 
 <!-- Sidebar on small screens when clicking the menu icon -->
-<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-medium w3-hide-large" style="display:none" id="mySidebar">
+<nav class="w3-sidebar w3-bar-block w3-black w3-card w3-animate-left w3-hide-large" style="display:none" id="mySidebar">
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-large w3-padding-16">Close ×</a>
   <a href="#home" onclick="w3_close()" class="w3-bar-item w3-button">HOME</a>
   <a href="#about" onclick="w3_close()" class="w3-bar-item w3-button">ABOUT</a>
-  <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button">RESEARCH</a>
-  <a href="#publication" onclick="w3_close()" class="w3-bar-item w3-button">PUBLICATION</a>
+  <a href="#news" onclick="w3_close()" class="w3-bar-item w3-button">NEWS</a>
+  <a href="#research" onclick="w3_close()" class="w3-bar-item w3-button">Topics</a>
+  <a href="#publication" onclick="w3_close()" class="w3-bar-item w3-button">PAPERS</a>
 </nav>
 
-
-
-<header class="header-1 w3-display-container" id="home">
+<!-- Header with full-height image -->
+<header class="bgimg-1 w3-display-container" id="home">
 	<div class="w3-display-middle w3-text-white", style="padding:32px">
-		<span class="w3-jumbo w3-hide-small"><b>Ran Mei's Website</b></span><br>
-		<span class="w3-xxlarge w3-hide-large w3-hide-medium"><b>Ran Mei's Website</b></span><br>
+<!-- 
+		<span class="w3-jumbo w3-hide-small"><b>R.Mei</b></span><br>
+		<span class="w3-xxlarge w3-hide-large w3-hide-medium"><b>R.Mei</b></span><br>
+ -->
 	</div> 
 </header>
 
 <!-- Home Section -->
-<div class="w3-padding-48 w3-sand">
+<div class="w3-padding-48 w3-2020-navy-blazer">
 	<div class="w3-row-padding">
-		<!-- Photo first on cellphone -->
-		<div class="w3-center w3-hide-large w3-hide-medium">
-			<img class="w3-card w3-margin-top" src="/assets/img/profile.jpg" alt="profile" style="width:70%;max-width:300px">
-		</div>
-		<!-- Text Intro -->
-		<div class="w3-col l8 m6">
-		      	<p class="w3-padding small">I am now a postdoc working at the National Institute of Advanced Industrial Science and Technology, Japan (<a href="https://www.aist.go.jp/index_en.html">AIST</a>, <a href="https://www.aist.go.jp/">産業技術総合研究所</a>) in the <a href="https://unit.aist.go.jp/bpri/bpri-gene/member_e.html">Microbial and Genetic Resources Research Group</a>. My current research topic is revealing the evolutionary hostory of microorganisms occurring in natural and engieered ecosystems with <a href="https://scholar.google.co.jp/citations?user=PSXFfsoAAAAJ&hl=en">Dr. Masaru K. Nobu</a>. I got my Master’s and PhD degree both in Environmental Science and Engingeering from the University of Illinos at Urbana-Champaign (UIUC), where most of my research focused on microbial ecology in wastewater treatment processes. I received my Bachelor’s of Engineering degree from Peking University (北京大学), China.</h5>
-    			<p><i class="fa fa-paperclip fa-fw w3-large w3-padding"></i> <a href="https://scholar.google.co.jp/citations?user=mRbZ3CoAAAAJ&hl=en"> Google Scholar</a>
-			<p><i class="fa fa-envelope fa-fw w3-large w3-padding"></i> Email: xxx</p>	
-		</div>
-		<!-- Photo on desktop -->
-		<div class="w3-col l4 m6">
-      			<img class="w3-card w3-right w3-hide-small w3-padding-large" src="/assets/img/profile.jpg" alt="profile" style="width:50%;max-width:300px">
-		</div>
+
+		<!-- Desktop -->
+         <div class="w3-col l1 m1">
+            &nbsp;
+         </div>
+         <!-- Photo -->
+         <div class="w3-col l4 m5">
+            <img class="w3-card w3-left w3-hide-small w3-padding-large" src="/Users/n20a/Downloads/profile.jpg" alt="profile" style="width:100%;max-width:300px">
+         </div>
+         <div class="w3-center w3-hide-large w3-hide-medium">
+            <img class="w3-card w3-center w3-hide-medium w3-hide-large w3-padding-large" src="/Users/n20a/Downloads/profile.jpg" alt="profile" style="width:80%;max-width:300px">
+            </br></br>
+         </div>
+         <!-- Text -->
+         <div class="w3-col l6 m5">
+            <p>I am now a postdoc working at the National Institute of Advanced Industrial Science and Technology, Japan (<a href="https://www.aist.go.jp/index_en.html">AIST</a>, <a href="https://www.aist.go.jp/">産業技術総合研究所</a>) in the <a href="https://unit.aist.go.jp/bpri/bpri-gene/member_e.html">Microbial and Genetic Resources Research Group</a>. My current research topic is revealing the evolutionary hostory of microorganisms occurring in natural and engieered ecosystems with Dr. Masaru K. Nobu. I got my Master’s and PhD degree both in Environmental Science and Engingeering from the University of Illinos at Urbana-Champaign (UIUC), where most of my research focused on microbial ecology in wastewater treatment processes. I received my Bachelor’s of Engineering degree from Peking University (北京大学), China. </p>
+            <i class="fa fa-paperclip fa-fw w3-large w3-padding"></i> <a href="https://scholar.google.co.jp/citations?user=mRbZ3CoAAAAJ&hl=en"> Google Scholar</a></br>
+            <i class="fa fa-file-pdf-o fa-fw w3-medium w3-padding"></i> <a href="/Users/n20a/Downloads/CV_RanMei_2022_EN.pdf"> Curriculum Vitae</a></br>
+            <i class="fa fa-envelope fa-fw w3-medium w3-padding"></i> r.mei {at} aist.go.jp</p>	
+         </div>
+         <div class="w3-col l1 m1">
+            &nbsp;
+         </div>
   	</div>		
 </div>
 	
 	
 <!-- About Section -->
-<div class="w3-row w3-padding-48 w3-container w3-light-grey" id="about">
-	<div>
-		<h1 class="w3-padding-large w3-text-black w3-center"><b>ABOUT</b></h1>
-  		<h3 class="w3-text-black w3-margin-left"><b>EDUCATION</b></h3>
-  		<hr style="width:30%;text-align:left;margin-left:16px;height:1px;background-color:black">
-  			<ul>
-  			<li class="small">Ph.D., Environmental Engineering and Science, University of Illinois at Urbana-Champaign (UIUC), USA, 2020</li>
-	  		<li class="small">M.S., Environmental Engineering and Science, University of Illinois at Urbana-Champaign (UIUC), USA, 2015</li>
-  			<li class="small">B.Eng., Energy and Resources Engineering, Peking University, China, 2013</li>
-			</ul>
-		</br>
-		
-		<h3 class="w3-text-black w3-margin-left"><b>AWARDS & HONORS</b></h3>
-		<hr style="width:30%;text-align:left;margin-left:16px;height:1px;background-color:black;">
-			<ul>
-  			<li class="small">Jacobs Engineering Group / AEESP Outstanding Doctoral Dissertation Award, Association of Environmental Engineering and Science Professors (AEESP), 2021</li>
-	  		<li class="small">Chinese Government Award for Outstanding Self-financed Students Abroad, China Scholarship Council, 2020</li>
-  			<li class="small">Engelbrecht Fellowship, UIUC, 2020</li>
-			<li>...</li>
-			</ul>
-		</br>
-	
-		<h3 class="w3-text-black w3-margin-left"><b>OTHER ACTIVITIES</b></h3>
-		<hr style="width:30%;text-align:left;margin-left:16px;height:1px;background-color:black;">
-			<ul>
-  			<li class="small">Jornal reviewer: Water Research, Environmental Science & Technology, Frontiers in Microbiology, Environmental International ...
-	  		<li class="small">Course instructor: Remediation Design, UIUC, 2018</li>
-  			<li>...</li>
-		</ul>
-	  </div>
-  </div>
+<div class="w3-row w3-padding-48 w3-container w3-2021-inkwell" id="about">
 
+      <div class="w3-center">
+         <h1 class="w3-text-white w3-center">About</h1>
+      </div>
+
+		<!-- Cell -->
+         <!-- Photo -->
+ <!-- 
+        <div class="w3-center w3-hide-large w3-hide-medium ">
+            <img class="w3-margin-top " src="assets/img/about.h.png" alt="profile" style="width:100%;max-width:450px">
+                     </br></br>
+         </div>
+ -->
+
+		<!-- Desktop -->
+         <!-- Text -->
+         <div class="w3-col l1 m1 w3-hide-small">&nbsp;</div>
+         <div class="w3-col l7 m6 s7">
+           <h3 class="w3-text-white">Career & Education</h3>
+           <ul class="hyphen">
+            <li> Postdoctoral fellow, AIST, 2021-present</br></li>
+            <li> PhD, Environmental Engineering & Science, UIUC, 2020</br></li>
+            <li> MS, Environmental Engineering & Science, UIUC, 2015</br></li>
+            <li> B.Eng., Energy and Resources Engineering, Peking University, 2013</br></li>
+           </ul>
+           <h3 class="w3-text-white">Selected Awards & Honors</h3>
+           <ul class="hyphen">
+            <li> Jacobs Engineering Group/AEESP Outstanding Doctoral Dissertation Award, AEESP, 2021</br></li>
+            <li> Government Award for Outstanding Self-financed Students Abroad, China Scholarship Council, 2020</br></li>
+            <li> Engelbrecht Fellowship, UIUC, 2020</br></li>
+            <li> Warren W. Yee Memorial Fellowship, UIUC, 2019</br></li>
+            <li> Yihai Kerry Scholarship, Peking University, 2012</br></li>
+            <li> Kwang-Hua Scholarship, Peking University, 2011</br></li>
+           </ul>
+           <h3 class="w3-text-white">Other Activities</h3>
+           <ul class="hyphen">
+            <li> Journal reviewer: Water Research, Environmental Science & Technology, etc.</br></li>
+            <li> Course design and instruction: Remediation Design, CEE540, UIUC</br></li>
+           </ul>
+         
+         </div>
+         <!-- Photo -->
+         <div class="w3-col l3 m4 w3-hide-small">
+            <div class="container">
+               <img class="center w3-right w3-padding-large" src="/Users/n20a/Downloads/logo-01.png" alt="logo" style="width:100%;max-width:300px">
+            </div>
+         </div>
+         <div class="w3-col w3-hide-large w3-hide-medium s5">
+            <div class="container-about">
+               <img class="center w3-right w3-padding-large" src="/Users/n20a/Downloads/logo-01.png" alt="logo" style="width:100%;max-width:300px">
+            </div>
+         </div>
+         <div class="w3-col l1 m1 w3-hide-small">&nbsp;</div>
+</div>
+
+<!-- News Section -->
+<div class="w3-row w3-padding-48 w3-container w3-2020-navy-blazer" id="news">
+
+         <div class="w3-center">
+            <h1 class="w3-text-white w3-center">Recent News</h1>
+         </div>
+         
+         <div class="w3-center w3-text-white">
+            <p class="small"><i class="fa fa-trophy w3-medium"></i> <b>2021.04</b> Dissertation won <a href="https://cee.illinois.edu/news/alumnus-wins-outstanding-doctoral-dissertation-award">award</a></p>
+         </div>
+<!--          <div class="w3-center w3-text-white"> -->
+<!--             <p class="small"><i class="fa fa-book w3-medium"></i> <b>2021.03</b> Study on <i>novel archaeal C1 metabolism</i> in ISME J -->
+<!--          </div> -->
+         <div class="w3-center w3-text-white">
+            <p class="small"><i class="fa fa-users w3-medium"></i> <b>2021.01</b> Joined Dr. MK Nobu'team at AIST as a postdoctoral fellow</p>
+         </div>      
+  		 <div class="w3-center w3-text-white">
+            <p class="small"><i class="fa fa-plane w3-medium"></i> <b>2020.08</b> GO HOME!</p>
+         </div>  
+  
+</div>
 
 <!-- Research Section -->
-<div class="w3-padding-48 w3-white" id="research">
-	<h1 class="w3-padding-large w3-text-black w3-center"><b>RESEARCH</b></h1>
+<div class="w3-padding-48 w3-2021-inkwell" id="research">
+	<h1 class="w3-padding-large w3-text-white w3-center">Research Topics</h1>
 	
 	<!-- First Research -->	
 	<div class="w3-row-padding w3-margin-left w3-margin-right">
 
-		<!-- Text -->
-		<div class="w3-col l6 m6">
-			<h3 class="w3-text-black"><b>Evolutionary History of Methanogenesis and Archaea</b></h3>	
-			<!-- Photo first on cellphone -->
-			<div class="w3-center w3-hide-large w3-hide-medium">
-				<img class="w3-round w3-margin-top" src="/assets/img/immigration.jpg" alt="archaea" style="width:100%;max-width:500px">
-			</div>
-			<p class="small">I am now a postdoc working at the National Institute of Advanced Industrial Science and Technology, Japan (<a href="https://www.aist.go.jp/index_en.html">AIST</a>, <a href="https://www.aist.go.jp/">産業技術総合研究所</a>) in the <a href="https://unit.aist.go.jp/bpri/bpri-gene/member_e.html">Microbial and Genetic Resources Research Group</a>. My current research topic is revealing the evolutionary hostory of microorganisms occurring in natural and engieered ecosystems with <a href="https://scholar.google.co.jp/citations?user=PSXFfsoAAAAJ&hl=en">Dr. Masaru K. Nobu</a>. I got my Master’s and PhD degree both in Environmental Science and Engingeering from the University of Illinos at Urbana-Champaign (UIUC), where most of my research focused on microbial ecology in wastewater treatment processes. I received my Bachelor’s of Engineering degree from Peking University (北京大学), China.</p>
+		<!-- Small screen -->
+		<!-- Photo first on cellphone -->
+		<div class="w3-center w3-hide-large w3-hide-medium">
+			<img class="w3-round w3-margin-top" src="/assets/img/archaea.jpg" alt="archaea" style="width:100%;max-width:500px">
 		</div>
-		
+
+		<!-- Medium/Large screen -->
+ 		<div class="w3-col l1 m1">&nbsp;</div>     
 		<div class="w3-col l6 m6">
-      			<div class="container">
-				<img class="center w3-round-large w3-right w3-hide-small w3-padding-large" src="/assets/img/immigration.jpg" alt="archaea" style="width:100%;max-width:500px">	
-			</div>
-		</div>
-    	</div>
-	
+         <h3 class="w3-text-white w3-left-align">History of <i>Archaea</i>: from methane to complexity</h3>	
+
+         <div class="w3-left">
+            I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph. I'm a paragraph.
+         </div>
+      </div>
+      
+      <!-- Medium/Large screen -->
+      <div class="w3-col l4 m4 w3-hide-small">
+         <div class="container">
+            <img class="center w3-round-large w3-right w3-hide-small w3-padding-large" src="/assets/img/archaea.jpg" alt="archaea" style="width:100%;max-width:500px">	
+         </div>
+      </div>
+ 		<div class="w3-col l1 m1">&nbsp;</div>     
+   </div>
+
+
+
 	<!-- Second Research -->	
 	<div class="w3-row-padding w3-margin-left w3-margin-right">
+
+		<!-- Small screen -->
+		<!-- Photo first on cellphone -->
+		<div class="w3-center w3-hide-large w3-hide-medium">
+			<img class="w3-round w3-margin-top" src="/assets/img/archaea.jpg" alt="archaea" style="width:100%;max-width:500px">
+		</div>
+     
+      <!-- Medium/Large screen -->
+ 		<div class="w3-col l1 m1">&nbsp;</div>     
+      <div class="w3-col l4 m4 w3-hide-small">
+         <div class="container">
+            <img class="center w3-round-large w3-right w3-hide-small w3-padding-large" src="/assets/img/archaea.jpg" alt="archaea" style="width:100%;max-width:500px">	
+         </div>
+      </div>
+ 		<!-- Medium/Large screen -->
 		<div class="w3-col l6 m6">
-      			<div class="container">
-				<img class="center w3-round-large w3-left w3-hide-small w3-padding-large" src="/assets/img/immigration.jpg" alt="immigration" style="width:100%;max-width:500px">
-			</div>
-		</div>	
+         <h3 class="w3-text-white w3-left-align">Uncharted majority in anaerobic bioreactors</h3>	
+
+         <div class="w3-left">
+           <p> Anaerobic bioreactors are engineered ecosystems that mimic natural environments where microbial degradation takes place under oxygen-free conditions. Despite the increasingly important roles in remediating the society's wastes, our understanding of the microbial principles is not complete. My research leverages cutting-edge bioinformatic tools and application-oriented engineering stratagies to uncover uncharacterized microbial lineages and metabolisms, such as direct interspecies electron transfer, natural and anthropogenic polymer degradation. I've also investigated various bioreactor types, exploring the link between microbial ecology and system performance. </p>
+         </div>
+      </div>
+ 		<div class="w3-col l1 m1">&nbsp;</div>     
+   </div>
+
+
+
+	<!-- Third Research -->	
+	<div class="w3-row-padding w3-margin-left w3-margin-right">
+
+		<!-- Small screen -->
+		<!-- Photo first on cellphone -->
+		<div class="w3-center w3-hide-large w3-hide-medium">
+			<img class="w3-round w3-margin-top" src="/assets/img/archaea.jpg" alt="archaea" style="width:100%;max-width:500px">
+		</div>
+
+		<!-- Medium/Large screen -->
+		<div class="w3-col l1 m1">&nbsp;</div>
 		<div class="w3-col l6 m6">
-      			<h3 class="w3-text-black"><b>Microbial immigration</b></h3>
-			<div class="w3-center w3-hide-large w3-hide-medium">
-				<img class="w3-round w3-margin-top" src="/assets/img/immigration.jpg" alt="immigration" style="width:100%;max-width:500px">
-			</div>
-			<p class="small">I am now a postdoc working at the National Institute of Advanced Industrial Science and Technology, Japan (<a href="https://www.aist.go.jp/index_en.html">AIST</a>, <a href="https://www.aist.go.jp/">産業技術総合研究所</a>) in the <a href="https://unit.aist.go.jp/bpri/bpri-gene/member_e.html">Microbial and Genetic Resources Research Group</a>. My current research topic is revealing the evolutionary hostory of microorganisms occurring in natural and engieered ecosystems with <a href="https://scholar.google.co.jp/citations?user=PSXFfsoAAAAJ&hl=en">Dr. Masaru K. Nobu</a>. I got my Master’s and PhD degree both in Environmental Science and Engingeering from the University of Illinos at Urbana-Champaign (UIUC), where most of my research focused on microbial ecology in wastewater treatment processes. I received my Bachelor’s of Engineering degree from Peking University (北京大学), China.</p>
-		</div>		
-    	</div>
-	</br>
+         <h3 class="w3-text-white w3-left-align">Ecological impacts of microbial immigration</h3>	
+
+         <div class="w3-left">
+         Microbial ecosystems are usually physically connected with each other, allowing microorganisms to travel between communities, <i>i.e.</i>, microbial immigration. My works are among the first that attempt to quantify immigration's impacts on the assembly and function of downstream ecosystem. Using wastewater treatment processes as the model system and an ecogenomics-based mass balance approach, it is demonstrated that immigration's impacts could vary considerably, depending on the flux intensity, the physiological characteristic of immigrants, and the physiochemical features of up- and downstream environments. The concept, methodology and findings of my works advance how we decipher community assembly processes, and provide better understanding of the microbial principles that govern treatment performance.         
+
+         </div>
+      </div>
+      
+      <!-- Medium/Large screen -->
+      <div class="w3-col l4 m4 w3-hide-small">
+         <div class="container">
+            <img class="center w3-round-large w3-right w3-hide-small w3-padding-large" src="/assets/img/archaea.jpg" alt="archaea" style="width:100%;max-width:500px">	
+         </div>
+      </div>
+ 		<div class="w3-col l1 m1">&nbsp;</div>     
+   </div>
+
+
+
+
 </div>
 		
-		
+<div class="w3-padding-48 w3-2020-navy-blazer" id="people">
+   <h1 class="w3-padding-large w3-text-white w3-center">People</h1>
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/mountains.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-black w3-text-white">
+        <p><b>Ling LENG</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/lights.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-black w3-text-white">
+        <p><b>Yuga HIRAKATA</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/w3images/nature.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-black w3-text-white">
+        <p><b>Ran MEI</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- Second Photo Grid-->
+<!-- 
+  <div class="w3-row-padding">
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/p1.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container w3-margin-bottom">
+      <img src="/w3images/p2.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+    <div class="w3-third w3-container">
+      <img src="/w3images/p3.jpg" alt="Norway" style="width:100%" class="w3-hover-opacity">
+      <div class="w3-container w3-white">
+        <p><b>Lorem Ipsum</b></p>
+        <p>Praesent tincidunt sed tellus ut rutrum. Sed vitae justo condimentum, porta lectus vitae, ultricies congue gravida diam non fringilla.</p>
+      </div>
+    </div>
+  </div>
+ -->
+</div>
+
 <!-- Publication Section -->
 
-<div class="w3-container w3-padding-48 w3-row w3-sand" id="publication">
+<div class="w3-container w3-padding-48 w3-row w3-2021-inkwell" id="publication">
   	<div>	
-		<h1 class="w3-padding-large w3-text-black w3-center"><b>PUBLICATION</b></h1>
-  		<h3 class="w3-text-black w3-margin-left w3-margin-right"><b>First author</b></h3>
-  			<ol>
-  			<li class="small"><u>Ran Mei,</u> Takashi Narihiro, Masaru K. Nobu, Kyohei Kuroda, and Wen-Tso Liu. Evaluating digestion efficiency in full-scale anaerobic digesters by identifying active microbial populations through the lens of microbial activity. <em>Scientific reports</em> 6, no. 1 (2016): 1-10. 
-  			<li class="small"><u>Ran Mei,</u> Takashi Narihiro, Masaru K. Nobu, and Wen-Tso Liu. Effects of heat shocks on microbial community structure and microbial activity of a methanogenic enrichment degrading benzoate. <em>Letters in applied microbiology</em> 63, no. 5 (2016): 356-362. 
-			</ol>
-		</br>
-	
-		<h3 class="w3-text-black w3-margin-left w3-margin-right"><b>Contributing author</b></h3>
-  			<ol>
-  			<li class="small">Nobu, Masaru K., Takashi Narihiro, <u>Ran Mei,</u> Yoichi Kamagata, Patrick KH Lee, Po-Heng Lee, Michael J. McInerney, and Wen-Tso Liu. Catabolism and interactions of uncultured organisms shaped by eco-thermodynamics in methanogenic bioprocesses. <em>Microbiome</em> , no. 1 (2020): 1-16.
+		<h1 class="w3-padding-large w3-text-white w3-center">First-author publications</h1>
+		<h5 class="w3-text-white w3-center">[full list at <a href="https://scholar.google.co.jp/citations?user=mRbZ3CoAAAAJ&hl=en"> Google Scholar</a>]</h5>
+ 		<div class="w3-col l1 m1">&nbsp;</div>     
+ 		<div class="w3-col l10 m10">
+  			<ol class="w3-margin-right">
+         <li class="small"><b><u>Mei R</u></b>, Nobu MK, Narihiro T and Liu WT, 2020. Metagenomic and metatranscriptomic analyses revealed uncultured Bacteroidales populations as he dominant proteolytic amino acid degraders in anaerobic digesters. <i>Frontiers in microbiology</i>, 11, 2763. </br></br>
+         <li class="small"><b><u>Mei R</u></b>, Nobu MK and Liu WT, 2020. Identifying anaerobic amino acids degraders through the comparison of short-term and long-term enrichments. <i>Environmental microbiology reports</i>, 12(2),173-184. </br></br>
+         <li class="small">Lam YC, <b><u>Mei R</u></b>†, Wu Z, Lee PK, Liu WT and Lee PH, 2020. Superior resolution characterization of microbial diversity in anaerobic digesters using full-length 16S rRNA gene amplicon sequencing. <i>Water research</i>, 178, 115175.
+ </br></br>
+         <li class="small">Kim J, <b><u>Mei R</u></b>†, Wilson FP, Yuan H, Bocher BTW. and Liu WT, 2020. Ecogenomics-based mass balance model reveals the effects of fermentation conditions on microbial activity. <i>Frontiers in microbiology</i>,​11, 3115.</br></br>
+		<li class="small"><b><u>Mei R</u></b> and Liu WT, 2019. Quantifying the contribution of microbial immigration in engineered water systems. <i>Microbiome</i>, 7, 144.</br></br>
+		<li class="small"><b><u>Mei R</u></b>, Kim J, Wilson FP, Bocher BTW and Liu WT, 2019. Coupling growth kinetics model and machine learning quantifies microbial immigration impacts and identifies key environmental parameters in a biological wastewater treatment process. <i>Microbiome</i>, 7, 65.</br></br>
+		<li class="small"><b><u>Mei R</u></b>, Nobu MK, Narihiro T, Yu J, Sathyagal A, Willman E and Liu WT, 2018. Novel Geobacter species and diverse methanogens contribute to enhanced methane production in media-added methanogenic reactors. <i>Water research</i>, 147, pp.403-412.</br></br>
+		<li class="small"><b><u>Mei R</u></b>, Nobu MK, Narihiro T, Kuroda K, Sierra J, Wu ZY, Lin Y, Lee PKH, Lee PH, van Lier JB, McInerney MJ, Kamagata Y and Liu WT, 2017. Operation-driven heterogeneity and overlooked feed-associated populations in anaerobic digester microbiome. <i>Water research</i>, 124, pp.77-84.</br></br>
+		<li class="small"><b><u>Mei R</u></b>, Narihiro T, Nobu MK, Kuroda K and Liu WT, 2016. Evaluating digestion efficiency in full-scale anaerobic digesters by identifying active microbial populations through the lens of microbial activity. <i>Scientific reports</i>, 6:34090.</br></br>
+		<li class="small"><b><u>Mei R</u></b>, Narihiro T, Nobu MK. and Liu WT, 2016. Effects of heat shocks on microbial community structure and microbial activity of a methanogenic enrichment degrading benzoate. <i>Letters in applied microbiology</i>, 63(5), pp.356-362.</br></br>
 			</ol>	
+		</div>
+ 		<div class="w3-col l1 m1">&nbsp;</div>     
 	</div>
 </div>
  
 
 
 <!-- Footer -->
-<footer class="w3-container w3-padding-32 w3-black w3-center w3-large">
+<footer class="w3-container w3-padding-32 w3-2019-evening-blue w3-center w3-large">
   <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a></p>
 </footer>
 
